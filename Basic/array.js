@@ -45,4 +45,12 @@ people.push(person1);
 people.push(person2);
 
 console.log(JSON.stringify(people));
-console.log(`${people[1].name} is ${people[1].Age} years old, and likes to read ${people[1].Books.join(';')}` );
+console.log(`${people[1].name} is ${people[1].Age} years old, and likes to read ${people[1].Books.join('')}` );
+
+// splice
+
+// problem solving
+
+// push and pop => stack
+// unshift and shift => queue
+

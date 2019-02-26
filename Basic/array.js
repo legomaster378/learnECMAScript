@@ -47,8 +47,12 @@ people.push(person2);
 console.log(JSON.stringify(people));
 console.log(`${people[1].name} is ${people[1].Age} years old, and likes to read ${people[1].Books.join('')}` );
 
-// splice
+// splice is very flexbible, can do concat, remove, replace
 
+// splice(startIndex, 1); // delete one specified item 
+//                    |
+//                   \ /
+//               count removed
 // problem solving
 
 // push and pop => stack

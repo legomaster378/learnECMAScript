@@ -35,7 +35,7 @@ function selectionSort(array) {
         for (var j = i; j < array.length; j++) {
             if (array[i] > array[j]) {
                 swap(array, i, j)
-            }           
+            }
         }
     }
 }

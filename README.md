@@ -36,6 +36,8 @@ test('test description', () => {
 
 ### matchers
 
+[matchers](https://jestjs.io/docs/en/using-matchers)
+
 - toBeNull matches only null
 - toBeUndefined matches only undefined
 - toBeDefined is the opposite of toBeUndefined
@@ -44,3 +46,7 @@ test('test description', () => {
 
 - toBe - uses Object.is to test exact equality.
 - toEqual - check the value of an exact object to expected, recursively checks every field of an object or array
+
+[Testing Asynchronous Code](https://jestjs.io/docs/en/asynchronous)
+
+[Setup and Teardown](https://jestjs.io/docs/en/setup-teardown)

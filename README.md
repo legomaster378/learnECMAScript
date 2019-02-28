@@ -1,3 +1,3 @@
-# learnECMAScript
+# LearnECMAScript
 
 Learning ECMAScript

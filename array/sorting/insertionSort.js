@@ -5,8 +5,8 @@ function insertionSort(array) {
   for (var i = 0; i < array.length; i++) {
     var current = array[i];
     var j = i;
-    /* check whether the adjacent element in left side is greater or
-            less than the current element. */
+    // check whether the adjacent element in left side is greater or
+    // less than the current element.
 
     while (j > 0 && current < array[j - 1]) {
       // moving the left side element to one position forward.

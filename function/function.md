@@ -18,6 +18,8 @@ named function
 
 ## Arrow functions
 
+Arrow function is an anonymous function can be passed around. In C#, there is a delegate type works exactly like arrow functions. It can be an action, predicate, or func.
+
 [ES6 In Depth: Arrow functions](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
 
 ## callback

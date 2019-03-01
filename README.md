@@ -1,5 +1,11 @@
 # LearnECMAScript
 
+## Tools
+
+Visual Studio Code extensions
+
+[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+
 ## jest
 
 `npm install --save-dev jest`

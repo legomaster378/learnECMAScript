@@ -1,6 +1,6 @@
 //https://www.studytonight.com/data-structures/bubble-sort
 
-const swap = require("../swap");
+const swap = require('../swap');
 
 // let the items with greater value move to the right side
 function bubbleSort(array) {
@@ -12,4 +12,5 @@ function bubbleSort(array) {
     }
   }
 }
+
 module.exports = bubbleSort;

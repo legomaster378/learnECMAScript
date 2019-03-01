@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "Dogman"
-    ]
+    ],
+    "editor.formatOnSave": true
 }

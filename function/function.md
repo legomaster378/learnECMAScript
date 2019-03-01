@@ -4,6 +4,13 @@
 
 named function
 
+```js
+function say(message) {
+  console.log(message);
+}
+say('hello world');
+```
+
 [function guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
 [Function constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
@@ -24,6 +31,6 @@ Arrow function is an anonymous function can be passed around. In C#, there is a 
 
 ## callback
 
-[Callback function]https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
+[Callback function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
 
 [callback on stackoverflow](https://stackoverflow.com/questions/824234/what-is-a-callback-function)

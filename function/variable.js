@@ -4,4 +4,4 @@ var b = 2;
 a = 2;
 
 var c = a + b;
-console.log("hello world"); 
+console.log('hello world');

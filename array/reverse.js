@@ -3,8 +3,10 @@ const swap = require('./swap');
 /**
  * Reverse an array
  * @param {Array} array
+ * @param {number} start index
+ * @param {number} end index
  */
-function reserve(array) {
+function reserve(array, start, end) {
   // burn the candle at both ends
   // swap the top and bottoms
 }

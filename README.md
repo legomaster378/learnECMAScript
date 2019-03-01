@@ -1,4 +1,4 @@
-# LearnECMAScript
+# Learn ECMAScript
 
 ## Tools
 

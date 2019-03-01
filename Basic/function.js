@@ -8,7 +8,7 @@ var myArray = [9, 1, 4, 2, 6, 3, 5, 7, 8, 10];
 function findMaxValueIndex(array, start) {
   var maxValue = array[start];
   var maxValueIndex = start;
-  for (var i = 1; i < array.length; i++) {
+  for (var i = 1; i < array.length; i++) {  
     if (array[i] > maxValue) {
       maxValueIndex = i;
     }

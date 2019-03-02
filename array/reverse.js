@@ -6,13 +6,24 @@ const swap = require('./swap');
  * @param {number} start index
  * @param {number} end index
  */
-function reserve(array, start, end) {
-  // burn the candle at both ends
+function reverse(array) {
+  // from 0 to array.length-1
+  for (let i = 0; i < array.length / 2; i++) {
+    swap(array, i, array.length - (i + 1));
+  }
+  // let i = 0;
+  // let j = array.length - 1;
+  // while (i < j) {
+  //   swap(array, i, j);
+  //   i++;
+  //   j--;
+  // }
+
   // swap the top and bottoms
 }
 
-module.exports = reserve;
+module.exports = reverse;
 
-// var a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// reserve(a);
-// console.log(a);
+var a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+reverse(a);
+console.log(a);

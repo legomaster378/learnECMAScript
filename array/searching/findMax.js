@@ -1,5 +1,3 @@
-var myArray = [9, 1, 4, 10, 2, 6, 3, 5, 7, 8, 10];
-
 /**
  * find the max value in the array
  * @param {Array} array
@@ -7,12 +5,10 @@ var myArray = [9, 1, 4, 10, 2, 6, 3, 5, 7, 8, 10];
  * @param {number} end
  */
 function findMax(array, start, end) {
-  start = start || 0;
-  end = end || array.length - 1;
-  var maxValue = array[start];
-  var maxValueIndex = start;
+  const maxValue = array[start];
+  let maxValueIndex = start;
 
-  for (var i = 1; i <= end; i++) {
+  for (let i = 1; i <= end; i += 1) {
     if (array[i] > maxValue) {
       maxValueIndex = i;
     }
@@ -20,6 +16,4 @@ function findMax(array, start, end) {
   return maxValueIndex;
 }
 
-console.log(
-  `index: ${findMax(myArray)} - value: ${myArray[findMax(myArray)]} `
-);
+module.exports = findMax;

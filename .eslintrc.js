@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     commonjs: true,
     es6: true,
+    "jest": true
   },
   extends: 'airbnb',
   globals: {
@@ -19,5 +20,6 @@ module.exports = {
     'react',
   ],
   rules: {
+    "for-direction": "off"
   },
 };

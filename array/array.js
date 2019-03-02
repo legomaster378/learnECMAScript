@@ -1,6 +1,4 @@
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max)) + 1;
-}
+const getRandomNumber = require('../numbers/getRandomNumber');
 
 //creation
 //let array=[1,2,3,4,5];
@@ -8,20 +6,20 @@ function getRandomInt(max) {
 let array = [];
 
 // set up an array of numbers
-for (var i = 0; i < getRandomInt(30); i++) {
-  array.push(getRandomInt(10));
+for (var i = 0; i < getRandomNumber(30); i++) {
+  array.push(getRandomNumber(10));
 }
 
 // now array is populated
 //console.log (array);
 
 // array has length
-console.log(`Array length is ${array.length}`);
+console.log(`array length / size is ${array.length}`);
 
 // iteration
-// for(var index=0;index<array.length;index++){
-//     console.log(`The item ${index} of array's value is ${array[index]}`);
-// }
+for (var index = 0; index < array.length; index++) {
+  console.log(`The item ${index} of array's value is ${array[index]}`);
+}
 
 //use forEach
 // ECMAScript 5 Version

@@ -1,5 +1,3 @@
-// https://www.studytonight.com/data-structures/bubble-sort
-
 const swap = require("../swap");
 
 // let the items with greater value move to the right side

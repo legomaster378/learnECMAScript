@@ -1,6 +1,3 @@
-// https://www.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort
-// https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm
-
 function insertionSort(array) {
   for (let i = 0; i < array.length; i += 1) {
     const current = array[i];

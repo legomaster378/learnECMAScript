@@ -1,27 +1,27 @@
 const getRandomNumber = require('../numbers/getRandomNumber');
 
-//creation
-//let array=[1,2,3,4,5];
+// creation
+// let array=[1,2,3,4,5];
 
-let array = [];
+const array = [];
 
 // set up an array of numbers
-for (var i = 0; i < getRandomNumber(30); i++) {
+for (let i = 0; i < getRandomNumber(30); i++) {
   array.push(getRandomNumber(10));
 }
 
 // now array is populated
-//console.log (array);
+// console.log (array);
 
 // array has length
 console.log(`array length / size is ${array.length}`);
 
 // iteration
-for (var index = 0; index < array.length; index++) {
+for (let index = 0; index < array.length; index++) {
   console.log(`The item ${index} of array's value is ${array[index]}`);
 }
 
-//use forEach
+// use forEach
 // ECMAScript 5 Version
 // array.forEach(
 //     function(value, index){
@@ -34,25 +34,25 @@ array.forEach((value, index) => {
   console.log(`The item ${index} of array's value is ${value}`);
 });
 
-var person1 = {
+let person1 = {
   name: 'Aaron',
   Age: 13,
-  Books: ['No data of books, but sure that he reads a lot']
+  Books: ['No data of books, but sure that he reads a lot'],
 };
-var person2 = {
+let person2 = {
   name: 'Robin',
   Age: 5,
-  Books: ['Dogman, assortments of nursery rhymes']
+  Books: ['Dogman, assortments of nursery rhymes'],
 };
-var people = [];
+let people = [];
 people.push(person1);
 people.push(person2);
 
 console.log(JSON.stringify(people));
 console.log(
   `${people[1].name} is ${
-    people[1].Age
-  } years old, and likes to read ${people[1].Books.join('')}`
+  people[1].Age
+  } years old, and likes to read ${people[1].Books.join('')}`,
 );
 
 // splice is very flexible, can do concat, remove, replace

@@ -6,6 +6,10 @@ Visual Studio Code extensions
 
 [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
+## jsdoc
+
+Before the line of function, type `/**` and tab, VS Code will generate the basic jsdoc structure.
+
 ## jest
 
 `npm install --save-dev jest`

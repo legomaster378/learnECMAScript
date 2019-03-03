@@ -1,12 +1,10 @@
-// https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm
-
 const swap = require("../swap");
 
 function selectionSort(array) {
   // start from each item from 0 to second last
-  for (var i = 0; i < array.length - 1; i++) {
+  for (let i = 0; i < array.length - 1; i++) {
     // if any item in the right is smaller , then swap
-    for (var j = i + 1; j < array.length; j++) {
+    for (let j = i + 1; j < array.length; j++) {
       if (array[j] < array[i]) {
         swap(array, i, j);
       }
@@ -16,10 +14,11 @@ function selectionSort(array) {
 }
 
 // make less swap calls
+// eslint-disable-next-line no-unused-vars
 function selectionSort2(array) {
-  for (var i = 0; i < array.length - 1; i++) {
-    var minIndex = i;
-    for (var j = i + 1; j < array.length; j++) {
+  for (let i = 0; i < array.length - 1; i++) {
+    let minIndex = i;
+    for (let j = i + 1; j < array.length; j++) {
       if (array[j] < array[minIndex]) {
         minIndex = j;
       }

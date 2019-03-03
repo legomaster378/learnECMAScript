@@ -1,4 +1,4 @@
-const swap = require("../swap");
+import { swap } from "../swap";
 
 function selectionSort(array) {
   // start from each item from 0 to second last

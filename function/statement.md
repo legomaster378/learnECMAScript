@@ -29,3 +29,10 @@ try {
 block statement
 
 labled blocks
+
+## loop
+in the statements, we have for loop, while loop, iterators. for loop is used with index, while loop is useful with boolean expression, stack, queue.
+
+### continue and break
+
+The continue statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.

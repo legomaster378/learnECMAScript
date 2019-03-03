@@ -1,4 +1,5 @@
-const swap = require("../swap");
+import { swap } from "../swap";
+// const swap = require("../swap");
 
 // let the items with greater value move to the right side
 function bubbleSort(array) {

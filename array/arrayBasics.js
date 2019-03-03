@@ -1,4 +1,4 @@
-const getRandomNumber = require('../numbers/getRandomNumber');
+const getRandomNumber = require("../numbers/getRandomNumber");
 
 // creation
 // let array=[1,2,3,4,5];
@@ -33,27 +33,6 @@ for (let index = 0; index < array.length; index++) {
 array.forEach((value, index) => {
   console.log(`The item ${index} of array's value is ${value}`);
 });
-
-let person1 = {
-  name: 'Aaron',
-  Age: 13,
-  Books: ['No data of books, but sure that he reads a lot'],
-};
-let person2 = {
-  name: 'Robin',
-  Age: 5,
-  Books: ['Dogman, assortments of nursery rhymes'],
-};
-let people = [];
-people.push(person1);
-people.push(person2);
-
-console.log(JSON.stringify(people));
-console.log(
-  `${people[1].name} is ${
-  people[1].Age
-  } years old, and likes to read ${people[1].Books.join('')}`,
-);
 
 // splice is very flexible, can do concat, remove, replace
 

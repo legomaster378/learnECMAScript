@@ -22,6 +22,14 @@ module.exports = {
     "no-plusplus": "off",
     "for-direction": "off",
     "no-param-reassign": "off",
-    "linebreak-style": "off"
+    "linebreak-style": "off",
+    "no-console": "off",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+        "message": "Unexpected property on console object was called"
+      }
+    ]
   }
 };

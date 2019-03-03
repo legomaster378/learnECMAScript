@@ -1,4 +1,4 @@
-const swap = require('./swap');
+const swap = require("./swap");
 
 /**
  * Shuffles array in place.
@@ -10,7 +10,7 @@ function shuffle(array) {
   // While there are elements in the array
   while (counter > 0) {
     // Pick a random index
-    let index = Math.floor(Math.random() * counter);
+    const index = Math.floor(Math.random() * counter);
 
     // Decrease counter by 1
     counter--;
@@ -21,6 +21,7 @@ function shuffle(array) {
 }
 
 // https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+// eslint-disable-next-line no-unused-vars
 function FisherYatesShuffle(array) {
   let randomIndex;
   // iterate from right to left

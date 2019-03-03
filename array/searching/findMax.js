@@ -1,4 +1,4 @@
-var myArray = [9, 1, 4, 10, 2, 6, 3, 5, 7, 8, 10];
+const assert = require("assert");
 
 /**
  * find the max value in the array
@@ -7,12 +7,12 @@ var myArray = [9, 1, 4, 10, 2, 6, 3, 5, 7, 8, 10];
  * @param {number} end
  */
 function findMax(array, start, end) {
-  start = start || 0;
-  end = end || array.length - 1;
-  var maxValue = array[start];
-  var maxValueIndex = start;
+  assert.ok(start >= 0 && start < array.length, "start should be in the range");
+  assert.ok(end >= start && end < array.length, "end should be in the range");
+  const maxValue = array[start];
+  let maxValueIndex = start;
 
-  for (var i = 1; i <= end; i++) {
+  for (let i = 1; i <= end; i += 1) {
     if (array[i] > maxValue) {
       maxValueIndex = i;
     }
@@ -20,6 +20,7 @@ function findMax(array, start, end) {
   return maxValueIndex;
 }
 
-console.log(
-  `index: ${findMax(myArray)} - value: ${myArray[findMax(myArray)]} `
-);
+module.exports = findMax;
+
+// const test = [1, 2, 3];
+// console.log(findMax(test, 0, 2));

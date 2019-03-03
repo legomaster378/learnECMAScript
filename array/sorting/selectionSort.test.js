@@ -1,7 +1,7 @@
 const selectionSort = require("./selectionSort");
 
 test("selectionSort should work", () => {
-  let array = [2, 8, 1, 0, 9, 3, 5, 7, 4, 6];
+  const array = [2, 8, 1, 0, 9, 3, 5, 7, 4, 6];
 
   selectionSort(array);
 

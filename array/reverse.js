@@ -1,4 +1,4 @@
-const swap = require('./swap');
+const swap = require("./swap");
 
 /**
  * Reverse an array
@@ -24,6 +24,6 @@ function reverse(array) {
 
 module.exports = reverse;
 
-var a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-reverse(a);
-console.log(a);
+// const a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// reverse(a);
+// console.log(a);

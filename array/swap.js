@@ -5,7 +5,7 @@
  * @param {number} right or target destination
  */
 function swap(array, left, right) {
-  let temp = array[right];
+  const temp = array[right];
   array[right] = array[left];
   array[left] = temp;
 }

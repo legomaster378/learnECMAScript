@@ -6,6 +6,8 @@ Visual Studio Code extensions
 
 [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
+Test
+
 ## jsdoc
 
 Before the line of function, type `/**` and tab, VS Code will generate the basic jsdoc structure.
@@ -37,9 +39,9 @@ use babel with jest
 `npm install --save-dev babel-jest @babel/core @babel/preset-env`
 
 ```js
-test('test description', () => {
-  const expected = '...';
-  let exact = '...';
+test("test description", () => {
+  const expected = "...";
+  let exact = "...";
   expect(exact).toBe(expected);
 });
 ```

@@ -3,23 +3,25 @@ module.exports = {
     browser: true,
     commonjs: true,
     es6: true,
-    "jest": true
+    jest: true
   },
-  extends: 'airbnb',
+  extends: "airbnb",
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly"
   },
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 2018
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ["react"],
   rules: {
-    "for-direction": "off"
-  },
+    quotes: [2, "double"],
+    "no-plusplus": "off",
+    "for-direction": "off",
+    "no-param-reassign": "off",
+    "linebreak-style": "off"
+  }
 };

@@ -1,9 +1,9 @@
-# Learn ECMAScript
+# Road map
 
-## Tools
+The road map to learn ECMAScript.
 
-Visual Studio Code extensions
+## Resources
 
-[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+### Books
 
-Test
+[Rediscovering JavaScript](https://pragprog.com/book/ves6/rediscovering-javascript)

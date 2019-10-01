@@ -5,7 +5,7 @@ module.exports = {
     es6: true,
     jest: true
   },
-  extends: "airbnb",
+  extends: "eslint:recommended",
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
@@ -27,8 +27,9 @@ module.exports = {
     "no-restricted-syntax": [
       "error",
       {
-        "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
-        "message": "Unexpected property on console object was called"
+        selector:
+          "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+        message: "Unexpected property on console object was called"
       }
     ]
   }

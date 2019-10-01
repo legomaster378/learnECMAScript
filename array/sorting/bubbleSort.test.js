@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+const swap = require("../swap");
 const bubbleSort = require("./bubbleSort");
 
 test("bubbleSort should work", () => {

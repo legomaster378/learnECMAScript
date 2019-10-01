@@ -8,4 +8,4 @@ function getRandomNumber(max) {
 
 module.exports = getRandomNumber;
 
-//console.log(getRandomNumber(6));
+// console.log(getRandomNumber(6));

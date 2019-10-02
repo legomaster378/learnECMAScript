@@ -39,3 +39,7 @@ for (const [i, name] of names.entries()) {
 ## symbol
 
 JavaScript previously has 5 primitive types: number, string, boolean, null and undefined. ECMA 6 added symbol primitive type.
+
+## Resources
+
+[Exploring ES6](https://exploringjs.com/es6/index.html#toc_ch_modules)

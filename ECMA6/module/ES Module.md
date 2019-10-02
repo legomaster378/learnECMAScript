@@ -55,3 +55,5 @@ Run it in node and VS Code
 `npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/node`
 
 `node --require @babel/register "d:\Wei\GitHub\learnECMAScript\ECMA6\module\Practice\main.js"`
+
+`node --require @babel/register "d:\Wei\GitHub\learnECMAScript\ECMA6\module\RediscoveringJSModuleExamples\left.mjs`

@@ -2,6 +2,7 @@
   "name": "learnecmascript",
   "version": "1.0.0",
   "description": "learn ecmascript",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -17,7 +18,9 @@
   },
   "homepage": "https://github.com/givemepower8/learnECMAScript#readme",
   "devDependencies": {
+    "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "babel-jest": "^24.9.0",
     "eslint": "^5.16.0",

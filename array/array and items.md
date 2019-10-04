@@ -9,15 +9,23 @@ let array = [1, 2, 3];
 console.log(array);
 ```
 
-## search for an item
+## search for an item / items
 
-### array.indexOf()
+### array.indexOf() and array.lastIndexOf()
 
 Often an index is returned.
 
 [array.indexOf](https://devdocs.io/javascript/global_objects/array/indexof) compares searchElement to elements of the Array using strict equality (the same method used by the === or triple-equals operator) and returns the index of first found.
 
 [array.lastIndexOf](https://devdocs.io/javascript/global_objects/array/lastindexof)
+
+### array.filter
+
+[array.filter](https://devdocs.io/javascript/global_objects/array/filter)
+
+### array.find and array.findIndex
+
+[array.find](https://devdocs.io/javascript/global_objects/array/find)
 
 ## Add new items
 
@@ -141,3 +149,9 @@ console.log(animals.slice(-3, -1));
 [array.join([separator])](https://devdocs.io/javascript/global_objects/array/join) creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string.
 
 [array.map](https://devdocs.io/javascript/global_objects/array/map)
+
+### array.flat
+
+[array.flat](https://devdocs.io/javascript/global_objects/array/flat)
+
+[array.flatMap](https://devdocs.io/javascript/global_objects/array/flatmap)

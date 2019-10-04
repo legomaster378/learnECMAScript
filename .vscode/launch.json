@@ -19,6 +19,7 @@
       "args": [
         "--runInBand"
       ],
+      "runtimeArgs": ["-r", "esm"],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",

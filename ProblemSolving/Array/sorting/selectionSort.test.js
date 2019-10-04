@@ -1,4 +1,3 @@
-const swap = require("../swap");
 const selectionSort = require("./selectionSort");
 
 test("selectionSort should work", () => {

@@ -1,5 +1,7 @@
 # random
 
+<https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131>
+
 ## What can random do
 
 - reshuffle
@@ -26,3 +28,9 @@ function getRndInteger(min, max) {
 ```
 
 ## random and array
+
+## random in nodejs
+
+<https://blog.abelotech.com/posts/generate-random-values-nodejs-javascript/>
+
+<https://www.npmjs.com/package/random>

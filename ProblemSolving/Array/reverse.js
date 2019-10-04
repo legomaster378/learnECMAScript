@@ -23,7 +23,3 @@ function reverse(array) {
 }
 
 module.exports = reverse;
-
-// const a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// reverse(a);
-// console.log(a);

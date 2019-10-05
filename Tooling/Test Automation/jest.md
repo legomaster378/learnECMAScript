@@ -32,6 +32,43 @@ test('test description', () => {
 });
 ```
 
+use jest in VS Code debug
+
+in launch.json
+
+```json
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      //"args": ["-r esm"],
+      "runtimeArgs": ["--experimental-modules"],
+      //"runtimeArgs": ["-r", "esm"],
+      "name": "ES Module Debug in Node",
+      "program": "${file}"
+    },
+    {
+      "type": "node",
+      "name": "vscode-jest-tests",
+      "request": "launch",
+      "args": ["--runInBand"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+    }
+  ]
+}
+```
+
+## how to use jest
+
 ### matchers
 
 [matchers](https://jestjs.io/docs/en/using-matchers)

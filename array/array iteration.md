@@ -30,9 +30,48 @@ array.forEach((value, index) => {
 });
 ```
 
-## array.entries
+## iterator
+
+```js
+const names = ['Sara', 'Jake', 'Pete', 'Mark', 'Jill'];
+
+// old way with for loop
+// for (let i = 0; i < names.length; i++) {
+//   console.log(names[i]);
+// }
+
+// new way with for of and iterator
+for (const key of names.keys()) {
+  console.log(key);
+}
+
+for (const name of names.values()) {
+  console.log(name);
+}
+
+for (const entry of names.entries()) {
+  console.log(entry);
+}
+
+
+## array.entries(), array.keys() and array.values()
 
 [array.entries()](https://devdocs.io/javascript/global_objects/array/entries)
+
+for (const entry of names.entries()) {
+  console.log(entry);
+}
+//[ 0, 'Sara' ]
+//[ 1, 'Jake' ]
+//[ 2, 'Pete' ]
+//[ 3, 'Mark' ]
+//[ 4, 'Jill' ]
+
+// with destructing
+for (const [i, name] of names.entries()) {
+  console.log(i + '--' + name);
+}
+```
 
 ```js
 var array1 = ['a', 'b', 'c'];
@@ -55,8 +94,6 @@ for (let e of iterator) {
   console.log(e);
 }
 ```
-
-## array.keys() and array.values()
 
 ## Gotchas
 

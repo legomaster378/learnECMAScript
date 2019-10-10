@@ -1,6 +1,14 @@
 # ES Module
 
-Named exports
+Modules encapsulates functionality, and expose them to other JavaScript files as libraries. Modules let you create clearly separate and reusable snippets of functionality, each testable on its own.
+
+Client-side JavaScript that runs in the browser uses another standard, called ES Modules.
+
+## Why ES Module
+
+In CommonJS, modules are loaded synchronously, and processed in the order the JavaScript runtime finds them. This system was born with server-side JavaScript in mind, and is not suitable for the client-side as the payload like network overhead. This is why ES Modules were introduced which tries to download the script needed on the fly.
+
+## Named exports
 
 ```js
 //------ lib.js ------

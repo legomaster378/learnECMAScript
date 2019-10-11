@@ -1,5 +1,7 @@
 # Object
 
+Object by default is a key value collection of data / function member.
+
 ## key value pair collection
 
 ```js

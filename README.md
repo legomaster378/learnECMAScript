@@ -8,6 +8,10 @@ The road map to learn ECMAScript.
 
 ## Resources
 
+### Standards
+
+[ES6](http://www.ecma-international.org/ecma-262/6.0/)
+
 ### Online code editors
 
 <https://codepen.io/>
@@ -21,6 +25,20 @@ The road map to learn ECMAScript.
 ### Tutorials
 
 [JavaScript Guide on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction)
+
+### Guidelines
+
+[Google Style](https://google.github.io/styleguide/jsguide.html)
+
+### Experts
+
+[Brendan Eich](https://brendaneich.com/)
+
+[Douglas Crockford](http://crockford.com/javascript/)
+
+[John Resig](https://johnresig.com/)
+
+[Nicholas C. Zakas](https://humanwhocodes.com/)
 
 ### Books
 

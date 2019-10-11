@@ -1,3 +1,0 @@
-# Object Oriented
-
-## new operator

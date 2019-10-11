@@ -2,11 +2,31 @@
 
 The road map to learn ECMAScript.
 
+## ES features
+
+<http://es6-features.org>
+
 ## Resources
+
+### Online code editors
+
+<https://codepen.io/>
+
+<http://next.plnkr.co/>
+
+<https://jsfiddle.net/>
+
+<https://jsbin.com/>
+
+### Tutorials
+
+[JavaScript Guide on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction)
 
 ### Books
 
 [Rediscovering JavaScript](https://pragprog.com/book/ves6/rediscovering-javascript)
+
+[The Modern JavaScript Tutorial](https://javascript.info/)
 
 [Eloquent Javascript](https://eloquentjavascript.net/)
 

@@ -1,8 +1,10 @@
 {
     "cSpell.words": [
-        "Dogman",
-        "linebreak",
-        "stackoverflow"
+      "Dogman",
+      "linebreak",
+      "stackoverflow",
+      "typeof",
+      "unshift"
     ],
     "editor.formatOnSave": true,
     "editor.tabSize": 2,

@@ -1,5 +1,9 @@
 # Array
 
+## Array.isArray
+
+<https://devdocs.io/javascript/global_objects/array/isarray>
+
 <https://devdocs.io/javascript-array/>
 
 - one dimension array
@@ -24,6 +28,8 @@ console.log(jagged);
 <https://coderbyte.com/challenges?a=true>
 
 [array on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections>
 
 [array on devdocs](https://devdocs.io/javascript-array/)
 

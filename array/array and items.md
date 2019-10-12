@@ -9,6 +9,8 @@ let array = [1, 2, 3];
 console.log(array);
 ```
 
+[fill()](https://devdocs.io/javascript/global_objects/array/fill)
+
 ## search for an item / items
 
 ### array.indexOf() and array.lastIndexOf()
@@ -28,6 +30,14 @@ Often an index is returned.
 [array.find](https://devdocs.io/javascript/global_objects/array/find)
 
 ## Add new items
+
+The [push()](<(https://devdocs.io/javascript/global_objects/array/push)>) method adds one or more elements to the end of an array and returns the new length of the array.
+
+The [pop()](https://devdocs.io/javascript/global_objects/array/pop) method removes the last element from an array and returns that element. This method changes the length of the array.
+
+The [shift()](https://devdocs.io/javascript/global_objects/array/shift) method removes the first element from an array and returns that removed element. This method changes the length of the array.
+
+The [unshift()](https://devdocs.io/javascript/global_objects/array/unshift) method adds one or more elements to the beginning of an array and returns the new length of the array.
 
 ### add item to the end
 
@@ -132,15 +142,15 @@ console.log(animals.slice(-3, -1));
 // push and pop => stack
 // unshift and shift => queue
 
-## predicate
+Array.from
 
-### array.includes
+The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.
+<https://devdocs.io/javascript/global_objects/array/from>
 
-[array.includes](https://devdocs.io/javascript/global_objects/array/includes)
+Array.of
 
-### array.some()
-
-[array.some](https://devdocs.io/javascript/global_objects/array/some)
+The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
+<https://devdocs.io/javascript/global_objects/array/of>
 
 ## conversion
 
@@ -150,8 +160,14 @@ console.log(animals.slice(-3, -1));
 
 [array.map](https://devdocs.io/javascript/global_objects/array/map)
 
+## map and flat
+
+### map
+
+The [map()](https://devdocs.io/javascript/global_objects/array/map) method creates a new array with the results of calling a provided function on every element in the calling array.
+
 ### array.flat
 
-[array.flat](https://devdocs.io/javascript/global_objects/array/flat)
+The [array.flat](https://devdocs.io/javascript/global_objects/array/flat) method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 
-[array.flatMap](https://devdocs.io/javascript/global_objects/array/flatmap)
+The [array.flatMap](https://devdocs.io/javascript/global_objects/array/flatmap) method first maps each element using a mapping function, then flattens the result into a new array. It is identical to a map followed by a flat of depth 1, but flatMap is quite often useful and merging both into one method is slightly more efficient.

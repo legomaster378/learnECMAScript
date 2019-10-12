@@ -6,6 +6,7 @@ Array's items can be created from scratch, copied from another array, mapped fro
 
 ```js
 let array = [1, 2, 3];
+console.log(`u suck ${array}`);
 console.log(array);
 ```
 

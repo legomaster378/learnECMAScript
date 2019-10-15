@@ -10,7 +10,7 @@ console.log(`u suck ${array}`);
 console.log(array);
 ```
 
-[fill()](https://devdocs.io/javascript/global_objects/array/fill)
+[fill()](https://devdocs.io/javascript/global_objects/array/fill) fills all the elements of an array from a start index to an end index with a static value.
 
 ## search for an item / items
 

@@ -4,6 +4,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections
 
 ## Map and WeakMap
 
+<https://devdocs.io/javascript/global_objects/map>
+
 ```js
 // Maps
 var m = new Map();
@@ -17,21 +19,28 @@ wm.set(s, { extra: 42 });
 wm.size === undefined;
 ```
 
-Set and WeakSet
-
 ```js
-// Sets
-var s = new Set();
-s.add('hello')
-  .add('goodbye')
-  .add('hello');
-s.size === 2;
-s.has('hello') === true;
+const scores = new Map([['Sara', 12], ['Bob', 11], ['Jill', 15], ['Bruce', 14]]);
 
-// Weak Sets
-var ws = new WeakSet();
-ws.add({ data: 42 });
-// Because the added object has no other references, it will not be held in the set
+scores.set('Jake', 14);
+
+console.log(scores.size);
+
+for(const [name, score] of scores.entries()) {
+  console.log(`${name} : ${score}`);
+}
+
+scores.forEach((score, name) => console.log(`${name} : ${score}`));
+
+scores.forEach(score => console.log(score));
+
+console.log(scores.has('Jane'));
+console.log(scores.has('Jill'));
+
+const another = new Map();
+another.set(1, 2);
+console.log(another);
+
 ```
 
 ```js

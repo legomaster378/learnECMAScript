@@ -90,19 +90,98 @@ console.log(a);
 console.log(array);
 ```
 
-### splice to remove items
+### splice to add, remove or replace item(s) at specified index
+
+`array.splice(start[, deleteCount[, item1[, item2[, ...]]]])`
+
+```js
+let months = ['Jan', 'March', 'April', 'June'];
+let inserted = months.splice(1, 0, 'Feb'); // inserts at index 1
+console.log(inserted); //[]
+console.log(months); //[ 'Jan', 'Feb', 'March', 'April', 'June' ]
+let deleted = months.splice(1, 1); // delete one item at index 1
+console.log(deleted); // [ 'Feb' ]
+// let deleted = months.splice(1); // delete all the items after index 1
+console.log(months); //[ 'Jan', 'March', 'April', 'June' ]
+let replaced = months.splice(1, 1,'replaced'); // replace one item at index 1
+console.log(months); //[ 'Jan', 'replaced', 'April', 'June' ]
+console.log(replaced); // [ 'March' ]
+```
 
 ## in-place change items
 
 a.k.a, inline change or mutate
 
-[array.reverse](https://devdocs.io/javascript/global_objects/array/reverse)
+[array.reverse](https://devdocs.io/javascript/global_objects/array/reverse) reverses an array in place.
 
-### splice to change items
+```js
+var array1 = ['one', 'two', 'three'];
+console.log('array1: ', array1);
+// expected output: Array ['one', 'two', 'three']
+
+var reversed = array1.reverse();
+console.log('reversed: ', reversed);
+// expected output: Array ['three', 'two', 'one']
+
+/* Careful: reverse is destructive. It also changes the original array */
+console.log('array1: ', array1);
+// expected output: Array ['three', 'two', 'one']
+```
 
 ## sort the items inside
 
-[array.sort](https://devdocs.io/javascript/global_objects/array/sort)
+[array.sort](https://devdocs.io/javascript/global_objects/array/sort) method sorts the elements of an array in place and returns the array. The default sort order is built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+
+```js
+var months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// ["Dec", "Feb", "Jan", "March"]
+
+var array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1);
+// [1, 100000, 21, 30, 4]
+
+array1.sort((a,b)=>{return a-b;});
+console.log(array1);
+
+array1.sort((a,b)=>{return b-a;});
+console.log(array1);
+```
+
+sort the objects by the value of one of their properties.
+
+```js
+var items = [
+  { name: 'Edward', value: 21 },
+  { name: 'Sharpe', value: 37 },
+  { name: 'And', value: 45 },
+  { name: 'The', value: -12 },
+  { name: 'Magnetic', value: 13 },
+  { name: 'Zeros', value: 37 }
+];
+
+// sort by value
+items.sort(function (a, b) {
+  return a.value - b.value;
+});
+
+// sort by name
+items.sort(function(a, b) {
+  var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+  var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1;
+  }
+
+  // names must be equal
+  return 0;
+});
+```
 
 ## copy items
 

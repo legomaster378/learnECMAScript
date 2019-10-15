@@ -2,7 +2,17 @@
 
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean>
 
+## decision making in flow
+
+## and && or ||
+
+true && true => true       
+true || true => true    
+true && false => false
+
 ## if and expression
+
+if (expression){//do somehting}
 
 ```js
 //the following yields true
@@ -14,7 +24,9 @@ if (2) {
 } // true
 if (0) {
   console.log('if (0) is true');
-} // which is not true
+} else {
+  console.log('if (0) is not true');
+}
 if (-1) {
   console.log('if (-1) is true');
 } //

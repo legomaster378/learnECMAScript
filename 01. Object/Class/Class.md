@@ -1,5 +1,9 @@
 # Class
 
+A class is a template which defines how objects of that type behave.
+
+Class declarations execute in strict mode; there's no need to add 'use strict'.
+
 ```js
 
 // new Car(); //BROKEN CODE no-hoisting
@@ -17,20 +21,7 @@ console.log(Car); //[Function: Car]
 console.log(Reflect.ownKeys(Car.prototype)); //[ 'constructor' ]
 ```
 
-## Constructors
-
-```js
-class Car {
-  constructor(year) {
-    this.year = year;
-  }
-}
-
-console.log(new Car(2018)); //Car { year: 2018 }
-
-```
-
-## Properties and Methods
+## Properties
 
 ```js
 class Car {
@@ -54,7 +45,9 @@ car.drive(10);
 console.log(car);
 ```
 
-getter
+### getter
+
+Setters are special methods used to define values only. Similarly, Getters are special methods used to return a value only.
 
 ```js
 class Car {
@@ -66,12 +59,13 @@ class Car {
   drive(distance) {
     this.miles += distance;
   }
-  
-  getAge() {
+
+  get age() {
     return new Date().getFullYear() - this.year;
   }
 
-  get age() {
+  // in Java and some other languages  
+  getAge() {
     return new Date().getFullYear() - this.year;
   }
 }
@@ -87,7 +81,9 @@ car.age = 7; // won't work
 console.log(car.age);
 ```
 
-setter
+### setter
+
+settter can take one parameter `value` only.
 
 ```js
 class Car {
@@ -131,7 +127,13 @@ try {
 }
 ```
 
-Computed Members
+## Methods
+
+Methods are functions that belong to the class.
+
+In the above example, drive() method can be accessed publicly by default.
+
+## Computed Members
 
 ```js
 const NYD = `New Year's Day`;
@@ -155,7 +157,24 @@ const methodName = 'list holidays';
 console.log(usHolidays[methodName]());
 ```
 
+## Constructors
+
+A constructor method is run when an object of this type is created, and it typically defines initial properties. 
+
+```js
+class Car {
+  constructor(year) {
+    this.year = year;
+  }
+}
+
+console.log(new Car(2018)); //Car { year: 2018 }
+
+```
+
 ## Static member
+
+Defining a method with the static keyword allows it to be called on a class without creating an object instance. JavaScript doesn’t support static properties in the same way as other languages, but it is possible to add properties to the class definition.
 
 ```js
 class Car {
@@ -203,184 +222,10 @@ car2.drive(175000);
 console.log(Car.pickBetter(car1, car2));
 ```
 
-## prototype
+## static method
 
-```js
-class Counter {}
+static method can only access not instance fields.
 
-Counter.prototype.count = 0;
-Counter.prototype.increment = function() { this.count += 1; };
+## More readings
 
-const counter1 = new Counter();
-const counter2 = new Counter();
-
-console.log(counter1.count);
-console.log(counter2.count);
-
-counter1.increment();
-console.log(counter1.count);
-console.log(counter2.count);
-```
-
-Reflection
-
-```js
-class Counter {}
-
-Counter.prototype.count = 0;
-Counter.prototype.increment = function() { this.count += 1; };
-
-const counter1 = new Counter();
-
-console.log(
-  `Prototype has: ${Object.keys(Reflect.getPrototypeOf(counter1))}`);
-
-console.log(`Before increment instance has: ${Object.keys(counter1)}`);
-counter1.increment();
-console.log(`After increment instance has: ${Object.keys(counter1)}`);
-```
-
-## inheritance
-
-```js
-class Person {
-  constructor(firstName, lastName) {
-    console.log('initializing Person fields');
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
-  
-  toString() {
-    return `Name: ${this.firstName} ${this.lastName}`;
-  }
-  
-  get fullName() { return `${this.firstName} ${this.lastName}`; }
-  
-  get surname() { return this.lastName; }
-}
-
-class ReputablePerson extends Person {
-  constructor(firstName, lastName, rating) {
-    console.log('creating a ReputablePerson');
-    super(firstName, lastName);
-    this.rating = rating;
-  }
-
-  toString() {
-    return `${super.toString()} Rating: ${this.rating}`;
-  }
-  
-  get fullName() {
-    return `Reputed ${this.surname}, ${super.fullName} `;
-  }
-  
-}
-
-const alan = new ReputablePerson('Alan', 'Turing', 5);
-console.log(alan.toString());
-console.log(alan.fullName);
-```
-
-```js
-class Person {
-  constructor(firstName, lastName) {
-    console.log('initializing Person fields');
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
-  
-  toString() {
-    return `Name: ${this.firstName} ${this.lastName}`;
-  }
-  
-  get fullName() { return `${this.firstName} ${this.lastName}`; }
-}
-
-class ReputablePerson extends Person {
-  constructor(firstName, lastName, rating) {
-    console.log('creating a ReputablePerson');
-    super(firstName, lastName);
-    this.rating = rating;
-  }
-
-  toString() {
-    return `${super.toString()} Rating: ${this.rating}`;
-  }
-  
-  get fullName() {
-    return `Reputed ${this.lastName}, ${super.fullName} `;
-  }
-}
-
-const printPrototypeHierarchy = function(instance) {
-  if(instance !== null) {
-    console.log(instance);
-    printPrototypeHierarchy(Reflect.getPrototypeOf(instance));
-  }
-};
-
-const alan = new ReputablePerson('Alan', 'Turing', 5);
-
-printPrototypeHierarchy(alan);
-
-class ComputerWiz {}
-
-Reflect.setPrototypeOf(Reflect.getPrototypeOf(alan), ComputerWiz.prototype);
-
-console.log('...after change of prototype...');
-
-printPrototypeHierarchy(alan);
-
-const ada = new ReputablePerson('Ada', 'Lovelace', 5);
-printPrototypeHierarchy(ada);
-
-```
-
-### super
-
-```js
-class Base {}
-
-class Derived1 extends Base {
-  constructor() {
-    console.log('Derived1');
-    super();
-    this.something = 4;
-  }
-}
-
-class Derived2 extends Base {
-  constructor() {
-    console.log('Derived2');
-    this.something = 4;
-  }
-}
-
-class Derived3 extends Base {
-  constructor() {
-    console.log('Derived3');
-    this.something = 4;
-    super();
-  }
-}
-
-class Derived4 extends Base {
-}
-
-new Derived1();
-
-try {
-  new Derived2();
-}catch(ex) {
-  console.log(ex.message);
-}
-
-try {
-  new Derived3();
-}catch(ex) {
-  console.log(ex.message);
-}
-
-new Derived4();
-console.log('done');
-```
+<https://www.sitepoint.com/javascript-private-class-fields/>

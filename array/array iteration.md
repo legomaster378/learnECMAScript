@@ -84,6 +84,35 @@ console.log(iterator1.next().value); //  [2, "c"]
 console.log(iterator1.next().value); // undefined
 ```
 
+Iterator has a done property. In this way, while loop can be used
+
+```js
+let array1 = ['a', 'b', 'c'];
+
+let iterator = array1.entries();
+
+let current = iterator.next();
+
+while(!current.done){  
+  console.log(current.value);
+  current = iterator.next();
+}
+```
+
+```js
+let array1 = ['a', 'b', 'c'];
+
+let iterator = array1.entries();
+
+let current = iterator.next();
+
+do {  
+  console.log(current.value);
+  current = iterator.next();
+} while(!current.done)
+```
+
+
 for ... of loop
 
 ```js

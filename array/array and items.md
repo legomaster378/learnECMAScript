@@ -132,6 +132,17 @@ console.log('array1: ', array1);
 
 [array.sort](https://devdocs.io/javascript/global_objects/array/sort) method sorts the elements of an array in place and returns the array. The default sort order is built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
 
+In a nutshell, the items are sorted lexicographically (in alphabetical order).
+
+```js
+var array = [52, 97, 3, 62, 10, 63, 64, 1, 9, 3, 4];
+array.sort();
+console.log(array);
+// [1, 10, 3, 3, 4, 52, 62, 63, 64, 9, 97]
+array.sort(function(a,b){ return a - b; });
+// [1, 3, 3, 4, 9, 10, 52, 62, 63, 64, 97]
+```
+
 ```js
 var months = ['March', 'Jan', 'Feb', 'Dec'];
 months.sort();
@@ -232,13 +243,29 @@ Array.of
 The Array.of() method creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
 <https://devdocs.io/javascript/global_objects/array/of>
 
+## comparision
+
+```js
+let array1= [1,2,3];
+let array2= [1,2,3];
+
+console.log(array1==array2); //false
+
+console.log(JSON.stringify(array1) == JSON.stringify(array2)); //true, stringify has overhead though
+
+```
+
+<https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript>
+
 ## conversion
 
 ### array.join()
 
 [array.join([separator])](https://devdocs.io/javascript/global_objects/array/join) creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string.
 
-[array.map](https://devdocs.io/javascript/global_objects/array/map)
+### array.toString()
+
+`array.join(",");`
 
 ## map and flat
 

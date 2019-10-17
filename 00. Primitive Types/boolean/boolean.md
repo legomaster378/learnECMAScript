@@ -4,18 +4,25 @@
 
 ## decision making in flow
 
-## and && or ||
+## and (&&) or (||)
 
-true && true => true       
-true || true => true    
+true && true => true
+true || true => true
 true && false => false
+true || false => false
 
 ## if and expression
 
-if (expression){//do somehting}
+expression here is a predicate which yields a boolean value.
+
+if (predicate){//do somehting}
+
+In JavaScript, value itself can be inside if statement.
+
+Any number as long as the value is not 0 yields true.
 
 ```js
-//the following yields true
+
 if (1) {
   console.log('if (1) is true');
 } //true
@@ -26,7 +33,7 @@ if (0) {
   console.log('if (0) is true');
 } else {
   console.log('if (0) is not true');
-}
+} // not true
 if (-1) {
   console.log('if (-1) is true');
 } //

@@ -1,6 +1,6 @@
 # Template Literals
 
-back ticks and \${varible or expression}
+back ticks and ${variable or expression}
 
 ```js
 const name1 = 'Jack';
@@ -12,8 +12,8 @@ console.log(`Hello ${name1} and ${name2}`);
 
 console.log(`Hello ${name1} and $name2`);
 
-const item = 'cake';
-console.log(`The kid asked, "how's the ${item}?"`);
+const item = 'coke';
+console.log(`The shady man asked, "how's the ${item}?"`);
 
 const price = 1;
 console.log(`The price of a { symbol is $${price * 0.01}.`);

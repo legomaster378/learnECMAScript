@@ -51,6 +51,28 @@ console.log(words);
 
 The [filter()](https://devdocs.io/javascript/global_objects/array/filter) method creates a new array with all elements that pass the test implemented by the provided function.
 
+```js
+var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+//const result = words.filter(word => word.length > 6);
+
+const result = words.filter(word => word.startsWith('e') || word.endsWith('t'));
+
+console.log(result);
+
+var people = [
+  { name: 'Alice', age: 21 },
+  { name: 'Max', age: 20 },
+   { name: 'Robin', age: 21 },
+  { name: 'Joe', age: 999999 },
+  { name: 'Jane', age: 20 }
+];
+
+const someone = people.filter( person => person.age>100);
+
+console.log(someone);
+```
+
 ### array.includes
 
 [array.includes](https://devdocs.io/javascript/global_objects/array/includes)

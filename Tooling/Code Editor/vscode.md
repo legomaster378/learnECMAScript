@@ -1,19 +1,26 @@
 # VS Code
 
-## Extensions
+## Code formatting
 
-### Code runner
+By default, VS Code is using [js-beautify](https://www.npmjs.com/package/js-beautify).
 
-[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+[Prettier](https://prettier.io)  Opinionated Code Formatter
 
-One of the great features is:
+<https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode>
 
-Select text even in markdown text, and press `Ctrl + Alt + J`, code runner will run that code.
+[beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 
-Or, for a separate js file, right click and click "Run Code" or press `Ctrl + Alt + N` with the file highlighted.
+## Settings
 
-## Resources
+<https://code.visualstudio.com/docs/getstarted/settings>
 
-<https://www.vscodecandothat.com/>
+`Ctrl + ,` to launch settings.
 
-<https://vscode-docs.readthedocs.io>
+VS Code provides two different scopes for settings:
+
+- User Settings - Settings that apply globally to any instance of VS Code you open.
+- Workspace Settings - Settings stored inside your workspace and only apply when the workspace is opened.
+
+## Resource
+
+[Official docs](https://code.visualstudio.com/docs)

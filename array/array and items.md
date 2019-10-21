@@ -141,6 +141,10 @@ console.log(array);
 // [1, 10, 3, 3, 4, 52, 62, 63, 64, 9, 97]
 array.sort(function(a,b){ return a - b; });
 // [1, 3, 3, 4, 9, 10, 52, 62, 63, 64, 97]
+var array = [52, 97, 3, 62, 10, 63, 64, 1, 9, 3, 4];
+array.sort(function(a,b){ return b - a; });
+console.log(array);
+//[  97, 64, 63, 62, 52,  10,  9,  4,  3,  3,   1]
 ```
 
 ```js

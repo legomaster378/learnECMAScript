@@ -795,4 +795,7 @@ var members = [
   }
 ];
 
-console.log(members.filter(guy => guy.expLevel > 184 || guy.name == "legomaster378"));
+console.log(members.map(x => `${x.name} donated ${x.donations} reinforcements and received ${x.donationsReceived} ratio ${x.donations / x.donationsReceived}`));
+console.log(members.map(x => x.donationsReceived));
+
+//console.log(members.filter(guy => guy.expLevel > 184 || guy.name == "legomaster378"));

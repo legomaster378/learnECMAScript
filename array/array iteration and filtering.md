@@ -73,6 +73,9 @@ const someone = people.filter( person => person.age>100);
 console.log(someone);
 ```
 
+const add=(a,b) =>{return a+b;}
+
+console.log(add(1,2))
 ### array.includes
 
 [array.includes](https://devdocs.io/javascript/global_objects/array/includes)

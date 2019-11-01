@@ -277,6 +277,19 @@ console.log(JSON.stringify(array1) == JSON.stringify(array2)); //true, stringify
 
 The [map()](https://devdocs.io/javascript/global_objects/array/map) method creates a new array with the results of calling a provided function on every element in the calling array.
 
+```js
+var array1 = [1, 2, 3, 4];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+
+const map2 = array1.map(x => x % 2 === 0);
+
+console.log(map2);
+```
+
 ### array.flat
 
 The [array.flat](https://devdocs.io/javascript/global_objects/array/flat) method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.

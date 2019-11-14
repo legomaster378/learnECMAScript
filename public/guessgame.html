@@ -4,20 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Pray to Rngesus</title>
 </head>
+<style>
+  .lastResult {
+    color: white;
+    padding: 3px;
+  }
+</style>
 
 <body>
+  <!-- <span> Rngesus will pick a number from 1 to 10. Choose wisely.</span> -->
+  <div class="colors">
+
+    <p class="lastResult">
+
+    </p>
+
+  </div>
+
+
+
+
   <script type="text/javascript">
+
+    const lastResult = document.querySelector('.lastResult');
+
     var solution = Math.round(Math.random() * 10);
-    let answer = Number(prompt("what is the solution"));
+    let answer = (Number(prompt("what is the solution")));
     if (answer === solution) {
       document.write("Congratulations")
+      lastResult.style.backgroundColor = 'green';
+
     }
     else {
       document.write(`Are you really that dumb? The answer was ${solution}!`);
+      lastResult.style.backgroundColor = 'red';
       //evil goes here
     }
+
   </script>
 
 </body>

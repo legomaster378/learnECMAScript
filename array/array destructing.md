@@ -2,6 +2,8 @@
 
 Destructing extracts return data from arrays and objects.
 
+<https://devdocs.io/javascript/operators/destructuring_assignment>
+
 ## Array Destructing
 
 ```js

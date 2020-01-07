@@ -128,7 +128,7 @@ console.log('array1: ', array1);
 // expected output: Array ['three', 'two', 'one']
 ```
 
-## sort the items inside
+## sort the items in-place
 
 [array.sort](https://devdocs.io/javascript/global_objects/array/sort) method sorts the elements of an array in place and returns the array. The default sort order is built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
 

@@ -92,9 +92,34 @@ for (let e of iterator) {
 }
 ```
 
+## How to write iterator
+
+```js
+let fibonacci = {
+  [Symbol.iterator]() {
+    let pre = 0,
+      cur = 1;
+    return {
+      next() {
+        [pre, cur] = [cur, pre + cur];
+        return { done: false, value: cur };
+      }
+    };
+  }
+};
+
+for (var n of fibonacci) {
+  // truncate the sequence at 1000
+  if (n > 1000) break;
+  console.log(n);
+}
+```
+
 ## Generators
 
-[Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) simplify iterator-authoring using function* and yield. A function declared as function* returns a Generator instance. Generators are subtypes of iterators which include additional next and throw. These enable values to flow back into the generator, so yield is an expression form which returns a value (or throws).
+[Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) simplify iterator-authoring using function* and yield. The idea is kind of similar with the enumerator in C#.
+
+A function declared as function* returns a Generator instance. Generators are subtypes of iterators which include additional next and throw. These enable values to flow back into the generator, so yield is an expression form which returns a value (or throws).
 
 ```js
 var fibonacci = {
@@ -116,3 +141,7 @@ for (var n of fibonacci) {
   console.log(n);
 }
 ```
+
+### [Symbol.iterator]
+
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator>

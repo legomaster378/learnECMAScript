@@ -2,6 +2,8 @@
 
 A class is a template which defines how objects of that type behave.
 
+<https://devdocs.io/javascript/statements/class>
+
 Class declarations execute in strict mode; there's no need to add 'use strict'.
 
 ```js

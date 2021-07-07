@@ -26,6 +26,12 @@ The road map to learn ECMAScript.
 
 [JavaScript Guide on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction)
 
+### References
+
+[Language Specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm)
+
+[MDN reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources)
+
 ### Guidelines
 
 [Google Style](https://google.github.io/styleguide/jsguide.html)

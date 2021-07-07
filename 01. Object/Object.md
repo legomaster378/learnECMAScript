@@ -1,6 +1,8 @@
 # Object
 
-Object by default is a key value collection of data / function member.
+An object is an instance of a class which is kind of like a template. Often we notated an object of a type.
+
+Object in JavaScript by default is a key value collection of data / function member.
 
 ## key value pair collection
 

@@ -84,25 +84,4 @@ console.log(add(1,2))
 
 [array.some](https://devdocs.io/javascript/global_objects/array/some)
 
-## How to write iterator
 
-```js
-let fibonacci = {
-  [Symbol.iterator]() {
-    let pre = 0,
-      cur = 1;
-    return {
-      next() {
-        [pre, cur] = [cur, pre + cur];
-        return { done: false, value: cur };
-      }
-    };
-  }
-};
-
-for (var n of fibonacci) {
-  // truncate the sequence at 1000
-  if (n > 1000) break;
-  console.log(n);
-}
-```
